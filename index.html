@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Giang Hương</title>
+    <style type="text/css">
+        body{
+            font-size: 22px;
+        }
+        .wrap{
+            width: 800px;
+            background: bisque;
+            margin: 0 auto;
+            padding: 40px;
+        }
+        .row{
+            overflow: hidden;
+        }
+        .row .low1{
+            float: left;
+        }
+        .row .low2{
+            padding-left: 40px;
+            float: left;
+        }
+        .row p{
+            margin: 0;
+        }
+
+    </style>
+</head>
+<body>
+<div class="wrap">
+    <form name="dangki" action="" method="post">
+        <div class="row">
+            <div class="low1">
+                Họ tên
+            </div>
+            <div class="low2">
+                <input type="text" name="username" placeholder="Nhập họ tên " value="">
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="low1">
+                SĐT
+            </div>
+            <div class="low2">
+                <input type="text" name="sdt" placeholder="Nhập số điện thoại" value="">
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="low1">
+                Mã xác thực
+            </div>
+            <div class="low2">
+                <input type="text" name="code" placeholder="Nhập mã xác thực gửi tới số điện thoại" value="">
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="low1">
+                Email
+            </div>
+            <div class="low2">
+                <input type="text" name="email" placeholder="Nhập email" value="">
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="low1">
+                Mật khẩu
+            </div>
+            <div class="low2">
+                <input type="text" name="password" placeholder="Mật khẩu từ 6 đến 32 kí tự" value="">
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="low1">
+                Giới tính
+            </div>
+            <div class="low2">
+                <input type="radio" name="sex" value="male">
+                Nam
+                <input type="radio" name="sex" value="female">
+                Nữ
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="low1">
+                Ngày sinh
+            </div>
+            <div class="low2">
+                <select name="day">
+                    <option value="">Ngày</option>
+                    <option value="1">Ngày 1</option>
+                    <option value="2">Ngày 2</option>
+                    <option value="3">Ngày 3</option>
+                    <option value="4">Ngày 4</option>
+                    <option value="5">Ngày 5</option>
+                    <option value="6">Ngày 6</option>
+                    <option value="7">Ngày 7</option>
+                    <option value="8">Ngày 8</option>
+                    <option value="9">Ngày 9</option>
+                    <option value="10">Ngày 10</option>
+                </select>
+
+                <select name="month">
+                    <option value="">Tháng</option>
+                    <option value="1">Tháng 1</option>
+                    <option value="2">Tháng 2</option>
+                    <option value="3">Tháng 3</option>
+                    <option value="4">Tháng 4</option>
+                    <option value="5">Tháng 5</option>
+                    <option value="6">Tháng 6</option>
+                    <option value="7">Tháng 7</option>
+                    <option value="8">Tháng 8</option>
+                    <option value="9">Tháng 9</option>
+                    <option value="10">Tháng 10</option>
+                    <option value="11">Tháng 11</option>
+                    <option value="12">Tháng 12</option>
+                </select>
+
+                <select name="year">
+                    <option value="">Năm</option>
+                    <option value="1">Năm 2009</option>
+                    <option value="2">Năm 2010</option>
+                    <option value="3">Năm 2011</option>
+                    <option value="4">Năm 2012</option>
+                    <option value="5">Năm 2013</option>
+                    <option value="6">Năm 2014</option>
+                    <option value="7">Năm 2015</option>
+                    <option value="8">Năm 2016</option>
+                    <option value="9">Năm 2017</option>
+                    <option value="10">Năm 2018</option>
+                </select>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="low2">
+                <p><input type="checkbox" name="accept" value="1">
+                    Nhận các thông tin và chương trình khuyến mãi của Tiki qua email.
+                    Khi bạn nhấn Đăng ký, bạn đã đồng ý thực hiện mọi giao dịch mua bán theo
+                    <a href="https://hotro.tiki.vn/hc/vi/articles/201971214">điều kiện sử dụng và chính sách của Tiki.</a></p>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="low1">
+                <input type ="submit" name="submit" value="Tạo tài khoản">
+            </div>
+        </div>
+
+    </form>
+</div>
+</body>
+</html>
