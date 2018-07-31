@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Giang</title>
+
+    <style type="text/css">
+
+        .wrap {
+            width: 500px;
+            height: 1000px;
+            margin: 0 auto;
+        }
+
+        .wrap .header {
+            height: 150px;
+            background: aquamarine;
+            color: white;
+            text-align: center;
+            line-height: 150px ;
+            border: 1px solid red;
+        }
+
+        .content{
+            height: 500px;
+            overflow: hidden;
+            border: 1px solid red;
+        }
+
+        .content .sidebar {
+            float: left;
+            width: 200px;
+            height: 500px;
+            background: antiquewhite;
+            border: 1px solid red;
+
+        }
+
+        .content .main-content {
+            float: right;
+            width: 300px;
+            height: 500px;
+            background: bisque;
+            border: 1px solid red;
+        }
+
+        .footer {
+            background: burlywood;
+            border: 1px solid red;
+        }
+
+        .menu {
+            background: cornflowerblue;
+        }
+
+        .menu ul {
+            background: cadetblue;
+            overflow: hidden;
+            padding: 0;
+            margin: 0;
+            list-style: none;
+        }
+        .menu ul li {
+            background: #44ff14;
+            float: left;
+            padding: 5px;
+
+        }
+
+        .menu a {
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+<div class="wrap">
+    <div class="header">
+        Header
+    </div>
+
+    <div class="menu">
+        <ul>
+            <li><a href="#">Thời sự</a></li>
+            <li><a href="#">Thế giới</a></li>
+            <li><a href="#">Kinh doanh</a></li>
+            <li><a href="#">Phát luật</a></li>
+            <li><a href="#">Xuất bản</a></li>
+
+        </ul>
+    </div>
+
+    <div class="content">
+        <div class="sidebar">Sidebar
+
+        </div>
+        <div class="main-content">Main Content</div>
+    </div>
+
+    <div class="footer">Footer</div>
+
+</div>
+</body>
+</html>

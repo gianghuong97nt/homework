@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Giang</title>
+    <link  rel="stylesheet" type="text/css" href="normalize.css">
+
+    <style type="text/css">
+        .wrap{
+            width: 1000px;
+            height: 3200px;
+            margin: 0 auto;
+            background: #97a083;
+        }
+
+        .wrap .form {
+            background: bisque;
+            height: 50px;
+            margin: 0 auto;
+            line-height: 50px;
+            overflow: hidden;
+        }
+
+        .wrap .form div {
+            display: inline;
+            float: left;
+        }
+
+        .wrap .form form {
+            display: inline;
+            padding: 20px;
+
+        }
+
+        .wrap .form a {
+            color: black;
+            padding: 10px;
+            text-decoration: none;
+            text-align: center;
+            line-height: 40px;
+        }
+
+        .wrap .header {
+            background: #ded7ca;
+            height: 200px;
+            text-align: center;
+            line-height: 200px;
+        }
+
+        .menu {
+            background: papayawhip;
+            height: 40px;
+        }
+
+        .menu ul {
+            overflow: hidden;
+            padding: 0;
+            margin: 0;
+            list-style: none;
+        }
+
+        .menu ul li {
+            padding: 7px;
+            float: left;
+        }
+        .menu ul li a{
+            text-decoration: none;
+            color: black;
+        }
+
+        .content {
+            background: bisque;
+            height: 2700px;
+        }
+
+        .content .primarily {
+            height: 800px;
+        }
+
+        .content .primarily .sidebar {
+            float: left;
+            width: 600px;
+            height: 800px;
+            background: #97a083;
+        }
+
+        .content .primarily .sidebar .image {
+            padding: 20px;
+        }
+
+        .content .primarily .sidebar .note {
+            margin: 2px;
+        }
+         .news {
+            height: 270px;
+             width: 600px;
+             padding: 20px;
+             overflow: hidden;
+        }
+         .news .fashion {
+             float: left;
+            width: 300px;
+            height: 270px;
+        }
+        .news .makeup {
+            float: right;
+            width: 280px;
+            height: 270px;
+        }
+
+        .content .primarily .main_content {
+            float: right;
+            height: 790px;
+            width: 350px;
+            padding: 5px;
+            margin: 3px;
+        }
+        .content .primarily .main_content div a {
+            text-decoration: none;
+            color: black;
+        }
+
+        .content .special {
+            height: 800px;
+            background: #ffd35f;
+            overflow: hidden;
+        }
+
+        .special .spec_1 {
+            height: 750px;
+            width: 500px;
+            background: #44ff14;
+            float: left;
+
+        }
+
+        .special .spec_2 {
+            height: 750px;
+            width: 500px;
+            background: #36f8ff;
+            float: right;
+
+        }
+
+        .content .event {
+            height: 1100px;
+            background: #c7e0ed;
+            overflow: hidden;
+        }
+
+        .content .event .film {
+            height: 550px;
+        }
+
+        .content .event .film .menu_1 ul {
+            overflow: hidden;
+            padding: 0;
+            margin: 0;
+            list-style: none;
+        }
+
+        .content .event .film .menu_1 ul li {
+            padding: 7px;
+            float: left;
+        }
+
+        .content .event .film .menu_1 ul li a {
+            color: black;
+        }
+
+        .content .event .p1 {
+            height: 450px;
+            width: 670px;
+            overflow: hidden;
+            float: left;
+        }
+        .content .event .p1 .film_1 {
+            height: 450px;
+            width: 330px;
+            float: left;
+        }
+        .content .event .p1 .film_2{
+            height: 450px;
+            width: 330px;
+            float: right;
+        }
+        .content .event .film_3{
+            height: 450px;
+            width: 330px;
+            float: right;
+        }
+
+
+        .content .event .food {
+            height: 550px;
+        }
+        .content .event .food .menu_2 ul {
+            overflow: hidden;
+            padding: 0;
+            margin: 0;
+            list-style: none;
+        }
+
+        .content .event .food .menu_2 ul li {
+            padding: 7px;
+            float: left;
+        }
+
+        .content .event .food .menu_2 ul li a {
+            color: black;
+        }
+
+        .content .event .p2 {
+            height: 450px;
+            width: 670px;
+            overflow: hidden;
+            float: left;
+        }
+        .content .event .p2 .food_1 {
+            height: 450px;
+            width: 330px;
+            float: left;
+        }
+        .content .event .p2 .food_2{
+            height: 450px;
+            width: 330px;
+            float: right;
+        }
+        .content .event .food_3{
+            height: 450px;
+            width: 330px;
+            float: right;
+        }
+
+        .wrap .footer {
+            background: white;
+            height: 200px ;
+            overflow: hidden;
+        }
+
+        .wrap .footer .address {
+            float: left;
+            height: 200px;
+            width: 700px;
+        }
+
+        .wrap .footer .logo {
+            float: right;
+            height: 200px;
+            width: 200px;
+        }
+        a{
+            text-decoration: none;
+        }
+
+
+    </style>
+
+</head>
+<body>
+
+<div class="wrap">
+
+    <!--Form-->
+    <div class="form">
+        <div>
+            <img src="../../images/cheerstolife.png" title="Zing MP3" style="width:50px; height: 50px">
+        </div>
+        <form>
+            <input type="text" name="search" value="" placeholder="Nhập nội dung cần tìm kiếm">
+            <input type="submit" name="select" value="Tìm kiếm">
+        </form>
+        <a href="https://mp3.zing.vn/">MP3</a>
+        <a href="https://news.zing.vn/">NEWS</a>
+        <a href="https://tv.zing.vn/">CONTACT</a>
+    </div>
+
+    <!--header-->
+    <div class="header">
+        <img class="irc_mi" src="https://cdn3.ivivu.com/2016/08/bai-bien-mau-hong-huyen-ao-nhu-trong-co-tich-ivivu-3.jpg" onload="typeof google==='object'&amp;&amp;google.aft&amp;&amp;google.aft(this)" width="1000" height="200" >
+    </div>
+
+    <!--Menu-->
+    <div class="menu">
+        <ul>
+            <li><a href="https://www.24h.com.vn/lam-dep-c145.html">Góc làm đẹp</a></li>
+            <li><a href="https://www.elle.vn/thoi-trang/xu-huong-phong-cach/">Phong cách thời trang</a></li>
+            <li><a href="https://fsfamily.vn/mau-toc-ngan-dep/">Style hair</a></li>
+            <li><a href="https://gianghuong97nt.wordpress.com/2018/04/09/chuyen-cua-nhung-co-nang-doc-than/">Phong cách sống</a></li>
+            <li><a href="http://thamvantamly.net/32/Tu-van-tinh-yeu.htm">Du lịch</a></li>
+            <li><a href="https://gianghuong97nt.wordpress.com/2018/04/12/nhung-ke-thua-cuoc-trong-tinh-yeu/">Ai rồi cũng thế</a></li>
+            <li><a href="https://gianghuong97nt.wordpress.com/">Cuộc sống của tôi</a></li>
+            <li><a href="http://www.giadinhvietnam.com/nhung-lo-lang-ngo-ngan-nhat-cua-con-gai-khi-yeu-d45963.html">Nỗi lo của sự trưởng thành</a></li>
+
+        </ul>
+    </div>
+
+    <!--content-->
+    <div class="content">
+        <!--Nội dung nổi bật trong ngày-->
+        <div class="primarily">
+            <div class="sidebar">
+                <div class="image">
+                    <img src="../../images/bucthu.jpg" title="Bức thư tình mùa thu" style="width: 500px;height: 400px">
+                </div>
+
+                <div class="note">
+                    <a href="https://ocuaso.com/tam-su-cuoc-song/viet-ve-tinh-yeu/tan-man-ban-sonata-mua-thu.html">Tản mạn: Bản Sonata mùa thu</a>
+                    Thời gian là hiện thân của sự thật, nó giúp chúng ta trưởng thành nhưng cũng cướp đi mất những mộng mơ. Và khi thời gian bắt đầu minh chứng rằng những lời hứa hẹn ngọt như kẹo đường – hóa ra cũng chỉ là những kẻ mạo danh khoác lên mình tấm khăn màu nhiệm, có kẻ cười trừ, có người thù hận, có người nuối tiếc.
+                </div>
+
+                <div class="news">
+
+                    <div class="fashion">
+                        <div>
+                            <img src="../../images/croptop.png" title="Croptop sơ mi" style="width: 230px;height: 230px">
+                        </div>
+                        <div>
+                            <a href="https://phunublog.com.vn/3-kieu-ao-so-mi-nu-croptop-dep-dang-thinh-hanh-trong-mua-he.html">Xu hướng thời trang năm 2018</a>
+                        </div>
+                    </div>
+
+                    <div class="makeup">
+                        <div>
+                            <img src="../../images/makeup.jpg" title="Croptop sơ mi" style="width: 230px;height: 230px">
+                        </div>
+                        <div>
+                            <a href="http://www.phunuonline.com.vn/dep/cach-trang-diem-tong-mau-nude-ua-nhin-va-tu-nhien-75206/">Cách trang điểm tự nhiên</a>
+                        </div>
+                    </div>
+
+
+                </div>
+
+            </div>
+
+
+            <div class="main_content">
+                <div>
+                    <img alt="Eden coffee - cafe đẹp nhất hà nội" style="width: 300px; height: 270px; display: block;" data-original="//media.foody.vn/images/14156514_581154105404262_1828138830_n.jpg" src="//media.foody.vn/images/14156514_581154105404262_1828138830_n.jpg">
+                    <a href="https://www.foody.vn/bai-viet/top-20-quan-cafe-dep-nhat-ha-noi-9735">Check in Top 20 quán cafe đẹp tại Hà Nội</a><br>
+                    <a href="https://news.zing.vn/20-mon-ngon-duong-pho-duoi-10000-dong-tai-ha-noi-post318329.html">Cùng đến 20 món ngon đường phố dưới 10.000 đồng tại Hà Nội</a><br>
+                    <a href="http://pcwebgames.net/threads/99674-Nhung-dia-diem-nen-den-khi-dat-chan-den-Ha-Noi.html">Thiên đường thu nhỏ trong lòng Hà Nội. Bạn đã từng đi chưa. Nếu chưa thì đừng bỏ qua nhé.</a><br>
+                    <a href="http://diadiemanuong.com/co-gi-hot/du-lich/7-diem-du-lich-viet-nam-hot-nhat-mua-he-danh-cho-gioi-tre">Bạn đang nghĩ mình nên đi đâu dịp hè này??? Đây là một số nơi thú vị đi cùng bạn bè và gia đình. Xách balo lên và đi thôi. Let go</a><br>
+
+                </div>
+
+                <div>
+                    <img class="irc_mi" src="http://mjumjushop.com/wp-content/uploads/2017/09/ao-len-nu-1-9.jpg" alt="Kết quả hình ảnh cho phong cách thời trang nữ cá tính" onload="typeof google==='object'&amp;&amp;google.aft&amp;&amp;google.aft(this)" width="250" height="300" style="margin-top: 0px;"><br>
+                    <a href="https://www.google.com.vn/search?q=phong+c%C3%A1ch+th%E1%BB%9Di+trang+n%E1%BB%AF+c%C3%A1+t%C3%ADnh&oq=Phong+c%C3%A1ch+thwoif+trang+n%E1%BB%AF&aqs=chrome.4.69i57j0l7.31902j1j7&sourceid=chrome&ie=UTF-8">Style cho các nàng cá tính</a><br>
+                    <a href="https://www.google.com.vn/search?tbm=isch&q=baggy%20r%C3%A1ch#imgrc=_">Làm mới phong cách với baggy rách</a>
+
+                </div>
+            </div>
+        </div>
+
+        <hr>
+        <!--Nội dung đặc biệt được quan tâm-->
+        <div class="special">
+            <h1> Special for you!</h1>
+            <div class="spec_1">
+                <img alt="Cau Vang Da Nang vao top nhung cau di bo an tuong nhat the gioi hinh anh 2" src="https://znews-photo-td.zadn.vn/w960/Uploaded/mdf_eioxrd/2018_07_30/11.jpg" width="1400" height="840" class="optimized" style="height: 300px; width: 450px;"><br>
+                <a href="https://news.zing.vn/cau-vang-da-nang-vao-top-nhung-cau-di-bo-an-tuong-nhat-the-gioi-post864753.html">Cầu Vàng lọp top những cây cầu đi bộ đẹp nhất thế giới</a><br>
+                <hr>
+                <img class="irc_mi" src="https://znews-photo-td.zadn.vn/w1024/Uploaded/lerl/2014_10_09/duy_zing.jpg" alt="Kết quả hình ảnh cho ảnh Hà Nội" onload="typeof google==='object'&amp;&amp;google.aft&amp;&amp;google.aft(this)" width="450" height="300" style="margin-top: 28px;"><br>
+                <a href="https://toplist.vn/top-list/dia-diem-chup-ngoai-canh-mien-phi-dep-nhat-danh-cho-cac-ban-nu-o-ha-noi-4326.htm">Những địa điểm không thể bỏ lỡ cho những nàng mê chụp ảnh</a>
+            </div>
+
+            <div class="spec_2">
+                <img class="irc_mi" src="http://kenhdulich.org/container/2015/content/articles/T-12/co-gi-choi-o-vung-dat-ba-vi-dang-dua-loi-moi-goi/co-gi-choi-o-vung-dat-ba-vi-dang-dua-loi-moi-goi-7.jpg" onload="typeof google==='object'&amp;&amp;google.aft&amp;&amp;google.aft(this)" width="450" height="300"  alt="Kết quả hình ảnh cho ba vì có gì"><br>
+                <a href="https://blog.traveloka.com/vn/bi-kip-phuot-ba-vi/">Cuối tuần này Ba Vì có gì</a><br>
+                <hr>
+                <img class="irc_mi" src="https://haivanxanh.com/wp-content/uploads/tam-dao.jpg" alt="Kết quả hình ảnh cho Tâm Đảo" onload="typeof google==='object'&amp;&amp;google.aft&amp;&amp;google.aft(this)" width="450" height="300" style="margin-top: 27px;"><br>
+                <a href="http://didauchoigi.com/kinh-nghiem-du-lich/neu-co-500k-hay-di-du-lich-tam-dao-trong-2-ngay/news5882.htm">Cùng khám phá cảm giác chạm tay vào mây với Tam Đảo nhé</a>
+            </div>
+        </div>
+        <hr>
+
+        <!--Sự kiên quan tâm-->
+        <div class="event">
+            <div class="film">
+                <hr>
+                <div class="menu_1">
+                    <ul>
+                        <li><a href="https://news.zing.vn/phim-anh.html"><b>Phim ảnh</b></a></li>
+                        <li><a href="https://www.youtube.com/channel/UClfwS2zHXYQCzwGfp-Fiw6A">Phim điện ảnh</a></li>
+                        <li><a href="https://vi.wikipedia.org/wiki/Phim_truy%E1%BB%81n_h%C3%ACnh">Phim truyền hình</a></li>
+                        <li><a href="https://khenphim.com/review-phim/phim-nuoc-ngoai/">Phim nước ngoài</a></li>
+                    </ul>
+                </div>
+                <hr>
+
+                <div class="p1">
+                    <div class="film_1">
+                        <img class="irc_mi" src="https://images2-focus-opensocial.googleusercontent.com/gadgets/proxy?container=focus&amp;gadget=a&amp;no_expand=1&amp;refresh=604800&amp;url=http%3A%2F%2Fphim3s.pw%2Fdata%2Fimages%2Ffilms%2Fthumb%2Fnguoc-chieu-nuoc-mat-vtv-nguoc-chieu-nuoc-mat-2017.jpg%3Fsize%3D300" alt="Kết quả hình ảnh cho phim" onload="typeof google==='object'&amp;&amp;google.aft&amp;&amp;google.aft(this)" width="300" height="400" > <br>
+                        <a href="https://www.youtube.com/results?search_query=ng%C6%B0%E1%BB%A3c+chi%E1%BB%81u+n%C6%B0%E1%BB%9Bc+m%E1%BA%AFt+t%E1%BA%ADp+cu%E1%BB%91i">Ngược chiều nước mắt tập cuối</a>
+                    </div>
+                    <div class="film_2">
+                        <img class="irc_mi" src="http://img.phimvtv.com/film/25771/ca-mot-doi-an-oan.poster.jpg" onload="typeof google==='object'&amp;&amp;google.aft&amp;&amp;google.aft(this)" width="300" height="400" ><br>
+                        <a href="https://www.google.com.vn/search?q=phim+chuy%E1%BA%BFn+%C4%91i+c%E1%BB%A7a+thanh+xu%C3%A2n&source=lnms&tbm=isch&sa=X&ved=0ahUKEwjOgY_f1sjcAhWKtI8KHRV_B9AQ_AUIDCgD&biw=1600&bih=770">Cả một đời ân oán tập 56</a>
+                    </div>
+                </div>
+
+                <div class="film_3">
+                    <img class="irc_mi" src="https://2.bp.blogspot.com/--tgPjuFG3rU/WyN5c4jn4BI/AAAAAAAFFmg/gWRFBzmh-S8bAmQyhURLWrW-K97IgxCBwCHMYCw/s0/35159293_440611863030282_2778630938983137280_o.jpg" alt="Kết quả hình ảnh cho phim chuyến đi của thanh xuân" onload="typeof google==='object'&amp;&amp;google.aft&amp;&amp;google.aft(this)" width="300" height="400"><br>
+                    <a href="https://www.google.com.vn/search?q=phim+chuy%E1%BA%BFn+%C4%91i+c%E1%BB%A7a+thanh+xu%C3%A2n&source=lnms&tbm=isch&sa=X&ved=0ahUKEwjOgY_f1sjcAhWKtI8KHRV_B9AQ_AUIDCgD&biw=1600&bih=770#imgrc=_">Chuyến đi của thanh xuân</a>
+                </div>
+
+
+            </div>
+
+            <div class="food">
+                <hr>
+                <div class="menu_2">
+                    <ul>
+                        <li><a href="https://news.zing.vn/am-thuc.html"><b>Ẩm thực</b></a></li>
+                        <li><a href="http://www.vfa.gov.vn/thuc-pham-va-suc-khoe.html">Thực phẩm</a></li>
+                        <li><a href="https://lozi.vn/chamsockhachhanghanoi/10-quan-ngon-cho-nguoi-ghien-do-nuong-1400349565551?utm_campaign=copy">Đồ nướng</a></li>
+                        <li><a href="http://haihabakery.vn/banh-ngot.htm">Bánh ngọt</a></li>
+                    </ul>
+                </div>
+                <hr>
+
+                <div class="p2">
+                    <div class="food_1">
+                        <img class="irc_mi" src="http://streaming1.danviet.vn/upload/1-2017/images/2017-03-25/149043977724715-suon-chua-ngot-01.jpg" onload="typeof google==='object'&amp;&amp;google.aft&amp;&amp;google.aft(this)" width="300" height="400" > <br>
+                        <a href="https://eva.vn/suon-xao-chua-ngot-p883c162.html">Sườn xào chua ngọt</a>
+                    </div>
+                    <div class="food_2">
+                        <img class="irc_mi" src="https://media.cooky.vn/recipe/g1/5199/s400x400/recipe5199-635606251917979477.jpg" alt="Kết quả hình ảnh cho súp bí đỏ" onload="typeof google==='object'&amp;&amp;google.aft&amp;&amp;google.aft(this)" width="300" height="400" ><br>
+                        <a href="https://www.huongnghiepaau.com/cach-nau-sup-bi-do-ngon-bo">Súp bí đỏ kem tươi</a>
+                    </div>
+                </div>
+
+                <div class="food_3">
+                    <img class="irc_mi" src="https://monan9.com/wp-content/uploads/2013/07/Cach-lam-canh-ga-chien-nuoc-mam-don-gian-tai-nha.jpg" onload="typeof google==='object'&amp;&amp;google.aft&amp;&amp;google.aft(this)" width="300" height="400" ><br>
+                    <a href="http://dichvuhay.vn/ga-rim-nuoc-mam-ngon.html">Gà rim nước mắn</a>
+                </div>
+            </div>
+
+
+
+        </div>
+        <hr>
+
+    </div>
+
+
+    <div class="footer">
+        <div class="address">
+            <p>Giấy phép báo điện tử số: 236/GP-BTTTT. Tổng Biên tập: Ngô Việt Anh </p>
+            <p>Cơ quan chủ quản: Hội Xuất bản Việt Nam. </p>
+            <p>Tòa soạn: D29 Trần Thái Tông, Cầu Giấy, Hà Nội.</p>
+            <p><i>Chỉ được phát hành lại thông tin từ website này khi có sự đồng ý bằng văn bản của báo</i></p>
+        </div>
+        <div class="logo">
+            <img src="../../images/cheerstolife.png" style="height: 200px; width: 200px">
+        </div>
+
+    </div>
+
+</div>
+</body>
+</html>
